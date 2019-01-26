@@ -16,4 +16,8 @@ public class Contractor extends Person {
     public Contractor(@NonNull double hourlyPay) {
         this.hourlyPay = hourlyPay;
     }
+
+    public void changeContractor(){
+
+    }
 }

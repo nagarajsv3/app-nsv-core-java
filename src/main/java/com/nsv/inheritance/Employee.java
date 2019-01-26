@@ -30,4 +30,10 @@ public class Employee extends Person {
         super.login();
         System.out.println("Logging in - System - 2 ");
     }
+
+    public void changeEmployee(){
+
+    }
+
+
 }

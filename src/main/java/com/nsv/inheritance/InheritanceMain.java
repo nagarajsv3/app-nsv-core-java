@@ -27,11 +27,27 @@ public class InheritanceMain {
         System.out.println("******************************");
 
         Employee employee2 = new Employee("Shekhar","Kundapur","Dev",125);
-
-
-
         System.out.println(employee2);
+        System.out.println("*****polymorphic*****");
+        Person p = new Employee();
+        change(employee);
+        change(contractor);
 
 
+        System.out.println();
+        Person p2 = createEmployee();
+    }
+
+    private static void change(Person p) {
+        if(p instanceof Employee) {
+            ((Employee)p).changeEmployee();
+        }else{
+            ((Contractor)p).changeContractor();
+        }
+
+    }
+
+    public static Person createEmployee(){
+        return new Employee();
     }
 }
