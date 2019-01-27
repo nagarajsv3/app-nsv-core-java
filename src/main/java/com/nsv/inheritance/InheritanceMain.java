@@ -38,6 +38,7 @@ public class InheritanceMain {
         Person p2 = createEmployee();
     }
 
+
     private static void change(Person p) {
         if(p instanceof Employee) {
             ((Employee)p).changeEmployee();
